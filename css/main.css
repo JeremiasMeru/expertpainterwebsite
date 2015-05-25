@@ -1,0 +1,510 @@
+body{
+	font: 16px/1.5 sans-serif;
+	margin: 0;
+}
+/*-------Start of header-------*/
+header{
+	width: 100%;
+	height: 15%;
+}
+#header_top{
+	width: 100%;
+	height: 15%;
+	z-index: 10;
+	position: fixed;
+	margin-top: -16%;
+}
+#header_bg{
+	width: 100%;
+	position: relative;
+}
+#header_navbar{
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 12%;
+	float: left;
+	position: absolute;
+}
+#logo{
+	width: 40%;
+	height: 12%;
+	right: 3%;
+	top: 5%;
+	position: absolute;
+}
+.logo_image{
+	width: 70%;
+	float: right;
+}
+.clearfix:before, .clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+
+#nav_menu nav li a:link{
+	color:rgb(110,34,08);
+}
+#nav_menu nav li a:hover{
+	color: red;
+}
+#nav_menu nav li a:active{
+	color: white;
+}
+#nav_menu nav li a:visited{
+	color: rgb(110,34,08);
+}
+
+#current a{
+	color: #fff;
+}
+
+/*-----new Nav bar--------*/
+
+
+nav ul li { list-style: none; }
+
+.navbar-toggle {
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 30px;
+  height: 30px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-on .bar1,
+.navbar-on .bar2,
+.navbar-on .bar3 { background-color: yellow; }
+
+.navbar-on .bar1 {
+  transform-origin: 10% 80%;
+  transform: rotate(45deg);
+}
+
+.navbar-on .bar3 {
+  transform-origin: 5% 5%;
+  transform: rotate(-45deg);
+}
+
+.navbar-on .bar2 { background-color: transparent; }
+
+#wecreate{
+	margin-top: 16%;
+	width: 100%;
+	height: 10%;
+	top: 10%;
+}
+.beauty{
+	text-align: center;
+	margin: 0 auto;
+	color: rgb(110,34,08);
+	font-size: 2.0em !important;
+	font-weight: bold;
+}
+.expert{
+	text-align: center;
+	padding-left: 20%;
+	margin: 0 auto;
+	font-size: .8em !important;
+	font-style: italic;
+}	
+/*-------Start of main ----*/
+
+main {
+	margin: 3% auto;
+	padding: .8em;
+	padding-bottom: 0;
+}
+main img{
+	width: 100%;
+	height: 190px;
+	text-align: center;
+}
+main h2{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+main p{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 1em;
+	font-weight:bold;
+}
+
+#gallery_title{
+	font-size: 2.3em;
+	font-weight: bold;
+	padding-bottom: 0;
+	color: rgb(110,34,08);
+}
+
+.pink{
+	color:#f62459;
+}
+#map-canvas{
+	margin: 0 auto;
+		width: 100%;
+		height: 300px;
+}
+#address-list {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	    width: 100%;
+	    height: auto;
+
+}
+#address-list li{
+		width: 50%;
+		height: auto;
+		float: left;
+		list-style: none;
+		text-align: center;
+}
+#address-list li a{
+		text-decoration: none;
+		font-size: 1em;
+}
+
+#address-list .active {
+	    background-color: #fcf8e3;
+}
+#note_map{
+		width: 100%;
+		height: auto;
+		margin-top: 15px;
+		padding-bottom: 5px;
+}
+.content{
+	width: 100%;
+	height: 80%;
+	position: center;
+}
+.content img{
+	width: 100%;
+	height: 50%;
+	position: center;
+}
+
+/*-----start of footer------*/
+
+footer p{
+	width: 100%;
+	left: 0px;
+	padding-left: 1em;
+	margin: 0 auto;
+	font-size: .8em;
+	background-color: lightgrey;
+}
+/*-------Start of Contact Us------*/
+
+.danger{
+	font-size: 0.8em;
+	color: rgb(207,0,15);
+	font-style: italic;
+}
+#message{
+	width:100%;
+	height: auto;
+}
+.for_label{
+	color: rgb(110,34,08);
+}
+#contactcontainer{
+	margin-bottom: 3em;
+}
+#contactcontainer h3{
+	color: rgb(110,34,08);
+	font-size: 2em;
+	text-align: center;
+}
+#submit-button{
+	color: rgb(110,34,08);
+	font: 1em bold;
+
+}
+.form-submit{
+	text-align: center;
+	margin-bottom: 10%;
+}
+#firstname, #lastname, #email {
+	border-color:rgb(110,34,08);
+	border: 1px solid;
+	width: 200px;
+	height: 20px;
+}
+#message{
+	border-color:rgb(110,34,08);
+	border: 1px solid;
+}
+
+/*------------------min-width:480--------------------------------------*/
+@media all and (min-width: 480px){
+	.gallery {
+		width: 100%;
+		height: auto;
+	}
+	.gallery img {
+		width: 48.2%;
+		height: 160px;
+		float: left;
+		padding-left: .4em;
+		padding-top: 5px;
+
+	}
+}
+
+/*------start of media queries ------------------------------------------*/
+/*-------Galaxy Note landscape width 640px ---------------------*/
+
+@media all and (max-width: 639px){
+	.nav-hide { 
+		display: none;
+	}
+	nav {
+	  position: fixed;
+	  z-index: 10;
+	  height: 80%;
+	  text-align: center;
+	  display: table;
+	  color: white;
+		top: 10%;
+		width: 100%;
+		height: auto;
+	}
+	#nav_menu{
+		position: absolute;
+		top: 5%;
+		width: 100%;
+		height: auto;
+		z-index: 11;
+		position: fixed;
+	}
+	#nav_menu ul{
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		padding-left: 0;
+		background-color: rgba(236,240,241,.95);
+	}
+	#nav_menu li{
+		list-style: none;
+		font-size: 1.5em;
+		padding-top: .6em;
+	}
+	#nav_menu li:first-child{
+		padding-top: 1em;
+	}
+	#nav_menu li:last-child{
+		padding-bottom: 1em;
+	}
+	#nav_menu li a{
+		display: block;
+		margin: 0 auto;
+		text-decoration: none;
+		color: #bfbfbf;
+		font-weight: bold;
+		font-size: 1.2em
+	}
+	#contactcontainer{
+		margin: 0 auto;
+		width: 80%;
+		height: auto
+	}
+	
+
+}
+/*----------------************------------------------------------------*/
+/* -----------Galaxy Tab 2 landscape width - 800px---------------*/
+
+@media all and (min-width: 640px) and (max-width: 800px){
+	.bar1, .bar2, .bar3{
+		display: none;
+	}
+	#nav_menu{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 70%;
+		height: 20%;
+		z-index: 11;
+	}
+	#nav_menu ul{
+		background-color: rgba(236,240,241,.95);
+		padding-left: 0;
+	}
+	#nav_menu ul li{
+		display:inline;
+		list-style: none;
+		width: 24%;
+		text-align:center;
+	}
+	#nav_menu ul li a:first-child{
+		padding-left: 5%;
+	}
+	#nav_menu ul li a{
+		text-decoration: none;
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	.row{
+		width: 80%;
+		height: auto;
+		margin: 3% auto;
+	}
+	.col-sm-6{
+		margin-top: 4%;
+		width: 100%;
+		height: 150%;
+		padding-left: .6em; 
+		padding-right: .6em
+	}
+	.col-sm-6 img{
+		width: 100%;
+		height: 350px;
+	}
+	.outside_home{
+		width: 120%;
+		height: 80%;
+	}
+	#wecreate{
+		font-size: 1.6em;
+	}
+	#image_main p{
+		width: 100%;
+		text-align: center;
+	}
+	#map-canvas{
+		width: 80%;
+		height:400px;
+	}
+	#row-gallery{
+		margin: 0 10%;
+		width: 80%;
+		height:auto;
+	}
+	#gallery img{
+		padding: 12px;
+	}
+	#contactcontainer{
+		margin: 0 auto;
+		width: 80%;
+		height: auto
+	}
+	#contactcontainer{
+		margin: 0 auto;
+		width: 60%;
+		height: auto
+	}
+}
+/*-----------------------------------min-width:801------------------------*/
+/*----------Other Tablet with landscape width more than 800px -------------*/
+@media all and (min-width: 801px){
+	.bar1, .bar2, .bar3{
+		display: none;
+	}
+	#nav_menu{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 70%;
+		height: 20%;
+		z-index: 11;
+	}
+	#nav_menu ul{
+		background-color: rgba(236,240,241,.95);
+		padding-left: 1%;
+	}
+	#nav_menu ul li{
+		display:inline;
+		list-style: none;
+		width: 24%;
+		text-align:center;
+	}
+	#nav_menu ul li a:first-child{
+		padding-left: 5.5%;
+	}
+
+	#nav_menu ul li a{
+		text-decoration: none;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	#wecreate{
+		font-size: 1.8em;
+	}
+	.row{
+		width: 100%;
+		height: auto;
+		margin: 5% auto;
+	}
+	.row .col-sm-6{
+		width: 49%;
+		float: left;
+	}
+	.row .col-sm-6 img{
+		width: 100%;
+		height: 280px;
+	}
+	.row .col-sm-6:last-child{
+		padding-left: 2%;
+	}
+	#row-gallery{
+		margin: 0 10%;
+		width: 80%;
+		height:auto;
+	}
+	#row-gallery img{
+		height: 260px;
+	}
+	#map-canvas{
+		width: 80%;
+		height:460px;
+	}
+	
+	#contactcontainer{
+		margin: 0 auto;
+		width: 50%;
+		height: auto
+	}
+}
+/*----------------------------min-width------------------------------*/
+/*--------------for Desktop ------------------------------*/ 
+@media all and (min-width: 1024px){
+	.bar1, .bar2, .bar3{
+		display: none;
+	}
+	.row .col-sm-6 img{
+		width: 100%;
+		height: 340px;
+	}
+	
+	#nav_menu ul li a:first-child{
+		padding-left: 5.5%;
+	}
+	#nav_menu ul li a{
+		font-size: 1.6em;
+	}
+}
+	
+
+
+
+
